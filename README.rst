@@ -26,3 +26,14 @@ Usage
     request.uri.scheme
 
 
+Settings.py
+===========
+
+::
+
+    MIDDLEWARE_CLASSES = (
+        ...
+        'uri.middleware.URIMiddleware',
+        ...
+    )
+

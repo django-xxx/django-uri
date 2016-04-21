@@ -13,6 +13,16 @@ Django URI
   pip install django-uri
   ```
 
+* Settings.py
+
+  ```python
+  MIDDLEWARE_CLASSES = (
+    ...
+    'uri.middleware.URIMiddleware',
+    ...
+  )
+  ```
+
 * Usage
 
   ```python
