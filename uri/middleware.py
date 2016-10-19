@@ -2,6 +2,8 @@
 
 from urlparse import urlparse, urlunparse
 
+from django_six import MiddlewareMixin
+
 
 class DotDict(dict):
     """ dot.notation access to dictionary attributes """
@@ -11,7 +13,7 @@ class DotDict(dict):
     __delattr__ = dict.__delitem__
 
 
-class URIMiddleware(object):
+class URIMiddleware(MiddlewareMixin):
 
     def process_request(self, request):
         parts = urlparse(request.build_absolute_uri())
