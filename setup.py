@@ -18,7 +18,7 @@ setup(
     author='Hackathon',
     author_email='kimi.huang@brightcells.com',
 
-    packages=['uri', ],
+    packages=['uri'],
     py_modules=[],
     install_requires=['django-six'],
 
