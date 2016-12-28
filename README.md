@@ -16,7 +16,8 @@ Django URI
 * Settings.py
 
   ```python
-  MIDDLEWARE_CLASSES = (
+  # Use `MIDDLEWARE_CLASSES` prior to Django 1.10
+  MIDDLEWARE = (
     ...
     'uri.middleware.URIMiddleware',
     ...
