@@ -20,7 +20,7 @@ setup(
 
     packages=['uri'],
     py_modules=[],
-    install_requires=['django-six'],
+    install_requires=['django-six', 'six'],
 
     classifiers=[
         'Development Status :: 5 - Production/Stable',
